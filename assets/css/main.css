@@ -2195,7 +2195,7 @@ input, select, textarea {
 		}
 
 			.panel > *.color0 {
-				background-image: url("../../images/overlay.png"), linear-gradient(45deg, #000000 20%, #4496e2 60%, #ffffff);
+				background-image: url("../../images/overlay.png"), linear-gradient(20deg, #000000 20%, #4496e2 60%, #ffffff);
 				background-size: 128px 128px, auto;
 			}
 
@@ -2712,7 +2712,7 @@ input, select, textarea {
 		}
 
 		.panel.color0 {
-			background-image: url("../../images/overlay.png"), linear-gradient(45deg, #000000 20%, #4496e2 60%, #ffffff);
+			background-image: url("../../images/overlay.png"), linear-gradient(20deg, #000000 20%, #4496e2 60%, #ffffff);
 			background-size: 128px 128px, auto;
 		}
 
