@@ -1019,7 +1019,8 @@ input, select, textarea {
 		@media (max-width: 600px) {
   			.image img {
     		max-width: 50% !important;
-  }
+ 		 }
+		}
 
 		.image.left, .image.right {
 			max-width: 50%;
