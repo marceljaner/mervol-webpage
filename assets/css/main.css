@@ -1015,7 +1015,9 @@ input, select, textarea {
     		max-width: 50% !important;
  		 }
 		}
-
+		.image img {
+			display:blovk;
+		}
 		.image.left, .image.right {
 			max-width: 100%;
 		}
