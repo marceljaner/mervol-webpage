@@ -1013,7 +1013,7 @@ input, select, textarea {
 
 		.image img {
 			display: block;
-			max-width: 90% !important;
+			max-width: 80% !important;
   			height: auto !important;
 		}
 		@media (max-width: 600px) {
@@ -1026,7 +1026,7 @@ input, select, textarea {
 		}
 
 			.image.left img, .image.right img {
-				width: 80%;
+				width: 50%;
 			}
 
 		.image.left {
