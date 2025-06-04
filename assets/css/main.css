@@ -1010,12 +1010,6 @@ input, select, textarea {
 			-ms-object-position: 25% 75%;
 			object-position: 25% 75%;
 		}
-
-		.image img {
-			display: block;
-			max-width: 80% !important;
-  			height: auto !important;
-		}
 		@media (max-width: 600px) {
   			.image img {
     		max-width: 50% !important;
