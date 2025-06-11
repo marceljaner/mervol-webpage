@@ -870,10 +870,18 @@ input, select, textarea {
 		}
 
 /* Image */
+
+	.logo-container {
+  		display: flex;
+  		justify-content: center; /* center horizontally */
+  		align-items: center;     /* center vertically */
+  		height: 100%;            /* ensure full height */
+	}
+
 	.logo-fix {
-  		max-width: 20% !important;
+  		max-width: 85% !important;
   		height: auto !important;
-  		display: block;
+  		display: flex;
   		margin: 0 auto;
 	
 	}
@@ -883,10 +891,10 @@ input, select, textarea {
   		}
 	}
 	.image {
-		display: inline-block;
-		position: relative;
-		border: 0;
-	}
+ 		 display: flex;
+ 		 justify-content: center;  /* center horizontally */
+  		 align-items: center;      /* center vertically, optional */
+		}
 
 		.image.filtered:after {
 			background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.25) 25%, rgba(227, 123, 124, 0.25) 50%, rgba(255, 228, 180, 0.25));
@@ -916,8 +924,8 @@ input, select, textarea {
 			position: absolute;
 			top: 0;
 			left: 0;
-			width: 100%;
-			height: 100%;
+			width: 50%;
+			height: 50%;
 		}
 
 		.image[data-position="top left"] img {
@@ -1016,14 +1024,18 @@ input, select, textarea {
  		 }
 		}
 		.image img {
-			display:blovk;
+			display: flex;
+			width: 10%;
+			
+			
+			
 		}
 		.image.left, .image.right {
-			max-width: 100%;
+			max-width: 50%;
 		}
 
 			.image.left img, .image.right img {
-				width: 100%;
+				width: 50%;
 			}
 
 		.image.left {
@@ -1041,11 +1053,11 @@ input, select, textarea {
 		.image.fit {
 			display: block;
 			margin: 0 0 1.5rem 0;
-			width: 100%;
+			width: 50%;
 		}
 
 			.image.fit img {
-				width: 100%;
+				width: 50%;
 			}
 
 		.image.main {
@@ -1055,8 +1067,9 @@ input, select, textarea {
 		}
 
 			.image.main img {
-				width: 80%;
+				width: 50%;
 			}
+
 
 /* List */
 
@@ -2209,7 +2222,7 @@ input, select, textarea {
 		}
 
 			.panel > *.color0 {
-				background-image: url("../../images/overlay.png"), linear-gradient(20deg, #000000 20%, #4496e2 60%, #ffffff);
+				background-image: url("../../images/overlay.png"), linear-gradient(20deg, #aec2bb 20%, #b8dfc8 60%, #b9c4c0);
 				background-size: 128px 128px, auto;
 			}
 
@@ -2237,29 +2250,75 @@ input, select, textarea {
 				background-color: #353865;
 			}
 
-			.panel > *.color1-alt {
-				background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.175) 25%, rgba(227, 123, 124, 0.175) 50%, rgba(255, 228, 180, 0.175));
-				background-size: 128px 128px, auto;
-				background-color: #6c5e86;
+			.panel > *.color0-mint {
+				 background-image: url("../../images/overlay.png"), linear-gradient(20deg, #eafaf1 20%, #c1ece4 60%, #a1dadc);
+    			 background-size: 128px 128px, auto;
+    			 background-color: #c1ece4;
 			}
 
-			.panel > *.color2-alt {
-				background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.175) 25%, rgba(227, 123, 124, 0.175) 50%, rgba(255, 228, 180, 0.175));
-				background-size: 128px 128px, auto;
-				background-color: #de7172;
+			.panel > *.color1-mint {
+				background-image: url("../../images/overlay.png"), linear-gradient(20deg, #45a29e 20%, #327d91 60%, #265d8c);
+    			background-size: 128px 128px, auto;
+    			background-color: #327d91;
 			}
 
-			.panel > *.color3-alt {
-				background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.175) 25%, rgba(227, 123, 124, 0.175) 50%, rgba(255, 228, 180, 0.175));
-				background-size: 128px 128px, auto;
-				background-color: #fedea6;
+			.panel > *.color2-mint {
+				background-image: url("../../images/overlay.png"), linear-gradient(20deg, #223a5e 20%, #1a2a45 60%, #0f1c2c);
+    			background-size: 128px 128px, auto;
+    			background-color: #1a2a45;
+			}
+			
+			.panel > *.color0-coral {
+				background-image: url("../../images/overlay.png"), linear-gradient(20deg, #fceee9 20%, #fbd4c2 60%, #f6a89e);
+    			background-size: 128px 128px, auto;
+    			background-color: #fbd4c2;
 			}
 
-			.panel > *.color4-alt {
-				background-image: url("../../images/overlay.png"), linear-gradient(45deg, rgba(114, 97, 147, 0.175) 25%, rgba(227, 123, 124, 0.175) 50%, rgba(255, 228, 180, 0.175));
-				background-size: 128px 128px, auto;
-				background-color: #323459;
+			.panel > *.color1-coral {
+				background-image: url("../../images/overlay.png"), linear-gradient(20deg, #e96d63 20%, #d94f4f 60%, #ba343b);
+   				background-size: 128px 128px, auto;
+    			background-color: #d94f4f;
 			}
+
+			.panel > *.color2-coral {
+				background-image: url("../../images/overlay.png"), linear-gradient(20deg, #6e1f27 20%, #500a15 60%, #30050c);
+   				background-size: 128px 128px, auto;
+   				background-color: #500a15;
+			}	
+			.panel > *.color0-lavender {
+				background-image: url("../../images/overlay.png"), linear-gradient(20deg, #f4ecfa 20%, #d9c9ef 60%, #bfa5e0);
+    			background-size: 128px 128px, auto;
+    			background-color: #d9c9ef;
+			}
+
+			.panel > *.color1-lavender {
+				background-image: url("../../images/overlay.png"), linear-gradient(20deg, #9063c0 20%, #6b3e91 60%, #4f2a6f);
+    			background-size: 128px 128px, auto;
+    			background-color: #6b3e91;
+			}
+
+			.panel > *.color2-lavender {
+				background-image: url("../../images/overlay.png"), linear-gradient(20deg, #32164d 20%, #220c39 60%, #140024);
+    			background-size: 128px 128px, auto;
+    			background-color: #220c39;
+			}
+			.panel > *.color0-earth {
+    			background-image: url("../../images/overlay.png"), linear-gradient(20deg, #f9f5f0 20%, #efe5d8 60%, #dfcfc2);
+    			background-size: 128px 128px, auto;
+    			background-color: #efe5d8;
+			}
+
+			.panel > *.color1-earth {
+  			    background-image: url("../../images/overlay.png"), linear-gradient(20deg, #ba9b7d 20%, #9f7e65 60%, #7c5e4d);
+  			    background-size: 128px 128px, auto;
+                background-color: #9f7e65;
+			}		
+
+			.panel > *.color2-earth {
+ 			   background-image: url("../../images/overlay.png"), linear-gradient(20deg, #594239 20%, #402d25 60%, #261913);
+     		   background-size: 128px 128px, auto;
+               background-color: #402d25;
+            }	
 
 		.panel > .intro {
 			padding: 3.5rem 3.5rem 2rem 3.5rem ;
